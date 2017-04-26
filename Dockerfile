@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/openshift3/jenkins-slave-maven-rhel7
+FROM openshift/jenkins-slave-maven-centos7
 
 MAINTAINER Siamak Sadeghianfar <ssadeghi@redhat.com>
 
