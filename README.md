@@ -8,18 +8,18 @@ use with [OpenShift v3](https://github.com/openshift/origin) for Gradle builds
 # Build Slave Image 
 To build the Jenkins Slave with Gradle based on the CentOS 7 image you need to run:
 ```
-curl https://raw.githubusercontent.com/niiku/jenkins-slave-gradle/master/Dockerfile | oc new-build --name=jenkins-slave-gradle  --dockerfile -
+curl https://raw.githubusercontent.com/siamaksade/jenkins-slave-gradle/master/Dockerfile | oc new-build --name=jenkins-slave-gradle  --dockerfile -
 ```
 For RHEL:
 ```
-curl https://raw.githubusercontent.com/niiku/jenkins-slave-gradle/master/Dockerfile.rhel7 | oc new-build --name=jenkins-slave-gradle  --dockerfile -
+curl https://raw.githubusercontent.com/siamaksade/jenkins-slave-gradle/master/Dockerfile.rhel7 | oc new-build --name=jenkins-slave-gradle  --dockerfile -
 ```
 Then add a tag to make the image stream available in the openshift namespace/project:
 ```
 oc tag jenkins-slave-gradle:latest openshift/jenkins-slave-gradle:latest
 ```
 # Add ConfigMap
-To use the jenkins slave a ConfigMap with the role set to "jenkins-slave" needs to be created:
+To use the Jenkins slave a ConfigMap with the role set to "jenkins-slave" needs to be created:
 ```
 apiVersion: v1
 kind: ConfigMap
