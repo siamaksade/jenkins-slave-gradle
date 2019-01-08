@@ -48,7 +48,7 @@ data:
       <containers>
       <org.csanchez.jenkins.plugins.kubernetes.ContainerTemplate>
         <name>jnlp</name>
-        <image>openshift/jenkins-slave-gradle:latest</image>
+        <image>docker-registry.default.svc:5000/openshift/jenkins-slave-gradle:latest</image>
         <privileged>false</privileged>
         <alwaysPullImage>false</alwaysPullImage>
         <workingDir>/tmp</workingDir>
