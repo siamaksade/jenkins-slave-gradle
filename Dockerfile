@@ -2,7 +2,7 @@ FROM openshift/jenkins-slave-maven-centos7
 
 MAINTAINER Siamak Sadeghianfar <ssadeghi@redhat.com>
 
-ENV GRADLE_VERSION=4.9
+ENV GRADLE_VERSION=5.0
 
 USER root
 
